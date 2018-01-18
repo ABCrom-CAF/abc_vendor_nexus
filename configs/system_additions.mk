@@ -51,11 +51,11 @@ PRODUCT_PACKAGES += \
    org.dirtyunicorns.utils
 
 # MusicFX advanced effects
-#ifneq ($(TARGET_NO_DSPMANAGER), true)
-#PRODUCT_PACKAGES += \
-    #libcyanogen-dsp \
-    #audio_effects.conf
-#endif
+ifneq ($(TARGET_NO_DSPMANAGER), true)
+PRODUCT_PACKAGES += \
+    libcyanogen-dsp \
+    audio_effects.conf
+endif
 
 # Disable Rescue Party
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -63,7 +63,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Set custom volume steps
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.media_vol_steps=30 \
-    ro.config.bt_sco_vol_steps=30
+    ro.config.media_vol_steps=20 \
+    ro.config.bt_sco_vol_steps=20
 
 $(call inherit-product-if-exists, vendor/nexus/prebuilt/prebuilt.mk)
