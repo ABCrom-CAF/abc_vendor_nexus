@@ -10,4 +10,7 @@
 
     <!-- Whether to show wifi activity indicators in the status bar -->
     <bool name="config_showWifiActivity">false</bool>
+
+    <bool name="kg_hide_emgcy_btn_when_oos">true</bool>
+    <bool name="config_showEmergencyButton">false</bool>
 </resources>
