@@ -23,3 +23,7 @@ PRODUCT_PACKAGES += \
 # TCP Connection Management
 PRODUCT_PACKAGES += tcmiface
 PRODUCT_BOOT_JARS += tcmiface
+
+# CAF version
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.caf.revision=LA.UM.6.4.r1-06100-8x98.0
